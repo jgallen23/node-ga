@@ -1,0 +1,19 @@
+{
+  "name": "ga",
+  "description": "server side google analytics",
+  "version": "0.0.1",
+  "homepage": "https://github.com/jgallen23/node-ga",
+  "authors": ["Greg Allen, @jgaui"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jgallen23/node-ga.git"
+  },
+  "dependencies": {
+    "request": "*"
+  },
+  "devDependencies": {
+    "qunit": "*"
+  },
+  "main": "./index.js",
+  "keywords": ["google analytics"]
+}
