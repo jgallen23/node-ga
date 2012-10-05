@@ -23,8 +23,8 @@ test('userId', function() {
 
 asyncTest('pageview', function() {
   expect(1);
-  this.ga.trackPage('testing/1', function() {
-    ok(true);
+  this.ga.trackPage('testing/1', function(err) {
+    ok(!err);
     start();
   });
 });
@@ -32,9 +32,25 @@ asyncTest('pageview', function() {
 asyncTest('test user', function() {
   expect(1);
   var userId = this.ga.trackPage('user/1');
-  this.ga.trackPage('user/2', userId, function() {
-    ok(true);
+  this.ga.trackPage('user/2', userId, function(err) {
+    ok(!err);
     start();
   });
+});
+
+asyncTest('event', function() {
+  expect(1);
+  this.ga.trackEvent(
+    {
+        category: 'Videos',
+        action: 'Video Loading',
+        label: 'Gone With the Wind',
+        value: 3
+    },
+    function(err) {
+      ok(!err);
+      start();
+    }
+  );
 });
 
