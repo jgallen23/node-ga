@@ -12,4 +12,9 @@ Server side google analytics
 	var host = 'nodega.jga.me';
 	var ga = new GoogleAnalytics(ua, host);
 	ga.trackPage('testing/1');
-
+    ga.trackEvent({
+        category: 'Videos',
+        action: 'Video Loading',
+        label: 'Gone With the Wind',
+        value: 1.234
+    });
