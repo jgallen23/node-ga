@@ -16,5 +16,5 @@ Server side google analytics
         category: 'Videos',
         action: 'Video Loading',
         label: 'Gone With the Wind',
-        value: 1.234
+        value: 42
     });
