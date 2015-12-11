@@ -4,6 +4,7 @@
   "version": "0.0.2",
   "homepage": "https://github.com/jgallen23/node-ga",
   "authors": ["Greg Allen, @jgaui"],
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/jgallen23/node-ga.git"
